@@ -20,7 +20,7 @@
         <router-view></router-view>
       </el-main>
       <el-footer>
-        <p>由以下机构提供技术支持:<a href="http://www.avlsec.com/" target="_blank">武汉安天信息技术有限责任公司</a></p>
+        <p>Created by:qzxiang</p>
       </el-footer>
     </el-container>
   </div>
