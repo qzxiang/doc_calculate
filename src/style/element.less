@@ -1,11 +1,17 @@
 :global{
-  .el-textarea__inner{
-    height: 300px;
-  }
-  .el-table th{
-    background: #64ab41;
+  .el-table{
     color: #fff;
-    font-size: large;
+    th{
+      background-color: #1b3c6b;
+      color: #fff;
+      font-size: large;
+    }
+    tr{
+      background-color: #457c9e;
+    }
+  }
+  .el-table--enable-row-hover .el-table__body tr:hover>td{
+    background-color: #1b3c6b63;
   }
   .el-upload{
     width: 100%;
@@ -13,5 +19,67 @@
   .el-upload-dragger{
     width: 60%;
     margin: auto;
+  }
+  .el-textarea__inner{
+    height: 300px;
+    color: #fff;
+    background-color: transparent;
+  }
+  .el-input__inner{
+    background-color: transparent;
+    color:#fff;
+  }
+  .el-select-dropdown{
+    background-color: #449ead;
+    color: #fff;
+    border-color: #449ead;
+    .el-select-dropdown__item{
+      background-color: transparent;
+      &.selected{
+        color: #fff;
+      }
+      &:hover{
+        background-color: #cccccc61;
+      }
+    }
+  }
+  .el-radio{
+    color: #fff;
+  }
+  .el-upload-dragger{
+    background-color: transparent;
+    .el-upload__text{
+      color: #fff;
+    }
+  }
+  .el-card{
+    background-color: transparent;
+  }
+  .el-pagination{
+    .btn-next,.btn-prev{
+      background-color: transparent;
+      &:hover{
+        color: #b3d8ff;
+      }
+      &:disabled{
+        color: #c0c4cc;
+        background-color: transparent;
+      }
+    }
+  }
+  .el-pager li{
+    background-color: transparent;
+    &:hover{
+      color: #b3d8ff;
+    }
+    &.active{
+      color: #fff;
+    }
+  }
+  .el-tag{
+    color: #fff;
+  }
+  .el-card__body{
+    padding: 10px;
   }
 }

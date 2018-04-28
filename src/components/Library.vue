@@ -41,7 +41,7 @@
         show-overflow-tooltip
         min-width="20%">
         <template slot-scope="scope">
-          <el-tag type="warning">{{scope.row.type}}</el-tag>
+          <el-tag type="info">{{scope.row.type}}</el-tag>
         </template>
       </el-table-column>
       <el-table-column
@@ -50,7 +50,7 @@
         show-overflow-tooltip
         min-width="20%">
         <template slot-scope="scope">
-          <el-tag type="info">{{(scope.row.size/(1024)).toFixed(2)}}KB</el-tag>
+          <el-tag type="warning">{{(scope.row.size/(1024)).toFixed(2)}}KB</el-tag>
         </template>
       </el-table-column>
     </el-table>
@@ -84,7 +84,7 @@ export default {
       library: [],
       loading: false,
       currentPage: 1,
-      pageSize: 10,
+      pageSize: 5,
     }
   },
   created() {
@@ -150,17 +150,17 @@ export default {
 <style lang="less" scoped>
 .library-wrapper{
   position: relative;
-  min-height: calc(~ '100vh - 301px');
+  min-height: calc(~ '100vh - 281px');
   padding: 20px 20px 60px 20px;
-  background: #f8f6f8;
+  background: #a4c7ea52;
   .title{
     font-size: 20px;
     font-weight: 700;
-    color: #64ab41;
+    color: #dcdfe6;
     margin-bottom: 20px;
   }
   .filename{
-    color: #408ec0;
+    color: #fff;
   }
   /* 分页 */
   .Pagination{
@@ -175,7 +175,7 @@ export default {
       height: 30px;
       line-height: 30px;
       font-size: 15px;
-      color: #5a5e66;
+      color: #fff;
     }
     .pagination-button{
       display:inline-block;

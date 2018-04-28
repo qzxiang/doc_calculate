@@ -12,7 +12,8 @@
         </div>
       </el-header>
       <el-main>
-        <el-menu :default-active="activeIndex" class="el-menu" mode="horizontal" router>
+        <el-menu :default-active="activeIndex" class="el-menu"
+                 background-color="#476795" text-color="#fff" active-text-color="#5eb2eb" mode="horizontal" router>
           <el-menu-item index="calculate">相似度计算</el-menu-item>
           <el-menu-item index="library">文件库</el-menu-item>
         </el-menu>
@@ -49,13 +50,14 @@ export default {
   height: 100%;
 }
 .el-header{
-  background: #000;
+  background: #193c6d;
   color: #fff;
   .title-wrapper{
     display: flex;
     height: 60px;
     line-height: 60px;
     font-size: 20px;
+    font-weight: 700;
     vertical-align: middle;
     .logo{
       flex: 0 0 40px;
@@ -70,13 +72,19 @@ export default {
   }
 }
 .el-main{
-  background: #ebecec;
-  min-height: calc(~ '100vh - 120px');
+  background-image: url("../image/background.jpg");
+  background-size: cover;
+  padding-top: 0;
+  min-height: calc(~ '100vh - 140px');
 }
 .el-footer{
-  background: #f0f2f5;
+  background: #193c6d;
+  color: #fff;
   text-align: center;
   height: 60px;
   line-height: 60px;
+  a{
+    color: #ccc;
+  }
 }
 </style>
