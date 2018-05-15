@@ -20,7 +20,7 @@
         <router-view></router-view>
       </el-main>
       <el-footer>
-        <p>Created by:qzxiang</p>
+        <p>created by:<a href="https://github.com/qzxiang" target="_blank">qzxiang</a></p>
       </el-footer>
     </el-container>
   </div>

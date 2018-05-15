@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1 class="count-title">待检测文本</h1>
+    <h1 class="count-title">文档上传</h1>
     <div class="radio">
-      <el-radio v-model="radio" label="2" @change="resetForm('countForm')">上传文件</el-radio>
-      <el-radio v-model="radio" label="1" @change="resetUpload">关键词搜索</el-radio>
+      <el-radio v-model="radio" label="2" @change="resetForm('countForm')">文件类型</el-radio>
+      <el-radio v-model="radio" label="1" @change="resetUpload">文本类型</el-radio>
     </div>
     <el-upload
       v-show="this.radio === '2'"

@@ -1,7 +1,7 @@
 <template>
   <div class="similar-wrapper">
     <h1 class="title">
-      相似度检测
+      检测结果
     </h1>
     <div v-if="result.data && result.data.length > 0">
       <p class="filename" v-if="result.filename && result.filename.length > 0">检测文档：<span class="name">{{result.filename}}</span></p>
